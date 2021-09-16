@@ -1,0 +1,117 @@
+ghc : Glasgow Haskell Compiler
+cabal-install : The command-line interface for Cabal and Hackage
+hugs : 
+fonts-powerline : 
+zsh-syntax-highlighting : Fish shell like syntax highlighting for Zsh
+python-jedi : 
+python3-jedi : An auto completion tool for Python that can be used for text editors
+libpam-u2f : 
+yubikey-personalization-gui : GUI for Yubikey personalization
+libpam-yubico : 
+libpam-u2f : 
+libfido2-0 : 
+libfido2-1 : 
+libfido2-udev : 
+pcscd : 
+scdaemon : 
+gnupg2 : Utility for secure communication and data storage
+pcsc-tools : Tools to be used with smart cards and PC/SC
+i3xrocks-battery : 
+python3-venv : 
+jq : Command-line JSON processor
+http
+Command-line JSON processor
+bison : A GNU general-purpose parser generator
+ncurses-base : Descriptions of common terminals
+ncurses-bin : 
+ncurses-term : Terminal descriptions
+ncurses-doc : 
+libncurses5-dev : 
+libncursesw5-dev : 
+libxml2-dev : 
+libzip-dev : 
+pkg-config : 
+libsodium-dev : 
+libconfig-dev : 
+libcurl4-openssl-dev : 
+libqrencode-dev : 
+libopenal-dev : 
+libalut-dev : 
+libnotify-dev : 
+python3-dev : 
+asciidoc : Text based document generation
+peco : 
+jq : Command-line JSON processor
+http
+Command-line JSON processor
+xsel : Command line clipboard and X selection tool
+rlwrap : Wrapper for GNU readline
+php : PHP scripting language for creating dynamic web sites
+composer : Dependency Manager for PHP
+lua5.3 : 
+screen : A screen manager that supports multiple logins on one terminal
+tmux : A terminal multiplexer
+dunst : Simple and configurable notification-daemon
+stylish-haskell : 
+ripgrep : Line oriented search tool
+yq : 
+recoll : Desktop full text search tool with Qt GUI
+https
+Desktop full text search tool with Qt GUI
+archivebox : 
+sshpass : Non-interactive SSH authentication utility
+visidata : Terminal interface for exploring and arranging tabular data
+moreutils : Additional unix utilities
+sox : A general purpose sound file conversion tool
+http
+A general purpose sound file conversion tool
+miller : Name-indexed data processing tool
+nmap : Network exploration tool and security scanner
+festival : Speech synthesis and text-to-speech system
+festvox-us-slt-hts : 
+espeak : Software speech synthesizer (text-to-speech)
+http
+Software speech synthesizer (text-to-speech)
+flite : Small, fast speech synthesis engine (text-to-speech)
+http
+Small, fast speech synthesis engine (text-to-speech)
+dict : 
+dict-devil : 
+dict-elements : 
+dict-freedict-all : 
+vera : 
+dictd : DICT protocol (RFC 2229) server and command-line client
+dict-wn : 
+dict-vera : 
+dict-moby-thesaurus : 
+dict-jargon : 
+dict-gazetteer2k : 
+zeal : Offline documentation browser inspired by Dash
+patat : Terminal-based presentations using Pandoc
+antiword : MS Word to ASCII/Postscript converter
+fim : 
+timg : 
+dunst : Simple and configurable notification-daemon
+stterm : 
+fasd : 
+pick : 
+fzy : 
+par : Paragraph reformatter, vaguely like fmt, but more elaborate
+atool : A perl script for managing file archives of various types
+git-remote-gcrypt : GNU Privacy Guard-encrypted git remote
+git-annex : Manage files with git, without checking their contents into git
+git-annex-remote-rclone : 
+git-lfs : Git extension for versioning large files
+lfs : 
+install : 
+at : Job spooling tools
+gnuit : 
+libfuse2 : 
+libfuse-dev : 
+python3.8 : Version 3.8 of the Python interpreter
+https
+Version 3.8 of the Python interpreter
+python3.8-dev : 
+pass-extension-tail : 
+tomb : 
+zbar-tools : 

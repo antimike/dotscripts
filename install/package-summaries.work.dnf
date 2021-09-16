@@ -1,0 +1,58 @@
+cabal-install : The command-line interface for Cabal and Hackage
+hugs98 : Haskell Interpreter
+git-remote-gcrypt : GNU Privacy Guard-encrypted git remote
+antiword : MS Word to ASCII/Postscript converter
+antiword : MS Word to ASCII/Postscript converter
+unrtf : RTF (Rich Text Format) to other formats converter
+unrar : 
+xsel : Command line clipboard and X selection tool
+sqlite-tools : sqlite tools
+fd-find : Simple, fast and user-friendly alternative to find
+girara : Simple user interface library
+http
+Simple user interface library
+girara-devel : Development files for girara
+http
+Development files for girara
+surf : Simple web browser
+ncftp : Improved console FTP client
+surfraw : Shell Users Revolutionary Front Rage Against the Web
+flameshot : Powerful and simple to use screenshot software
+tldr : Simplified and community-driven man pages
+direnv : Per-directory shell configuration tool
+rlwrap : Wrapper for GNU readline
+elixir : A modern approach to programming for the Erlang VM
+idris : Functional Programming Language with Dependent Types
+miller : Name-indexed data processing tool
+exa : Modern replacement for ls
+cheat : Help for various commands and their use cases
+choose : 
+lsd : Ls command with a lot of pretty colors and some other stuff
+exa : Modern replacement for ls
+sudo : Allows restricted root access for specified users
+dnf : Package manager
+https
+Package manager
+copr : 
+enable : 
+atim/bottom : 
+bottom : 
+sudo : Allows restricted root access for specified users
+dnf : Package manager
+https
+Package manager
+copr : 
+enable : 
+atim/gping : 
+gping : 
+most : more, less, most
+export : 
+pager='most' : 
+ncdu : Text-based disk usage viewer
+htop : Interactive process viewer
+incron : Inotify cron system
+trash-cli : Command line interface to the freedesktop.org trashcan
+progress : Coreutils Viewer
+pipx : Install and run Python applications in isolated environments
+pgcli : CLI for Postgres Database. With auto-completion and syntax highlighting
+syncthing : Continuous File Synchronization
