@@ -2,11 +2,27 @@
 # Convenience functions for determining how RCM-managed dotfiles should be
 # symlinked
 
-declare -r HOST="${HOST:-macbook}"
-declare -r BACKUPS="${BACKUPS:-$HOME/.backups}"
-declare -r LOGFILE="${RCM_LOGFILE:-$HOME/.rcm.log}"
+declare HOST="${HOSTNAME:-voidmobile}"
+declare BACKUPS="${BACKUPS:-$HOME/.backups}"
+declare LOGFILE="${RCM_LOGFILE:-$HOME/.rcm.log}"
 declare -i DRY_RUN=0
 mkdir -p "$BACKUPS"
+
+_rcm_usage() {
+    cat <<-USAGE
+		
+		OPTIONS:
+		    -l      Specify logfile explicitly
+		            Default: ~/.rcm.log
+		    -b      Specify backup dir explicitly
+		            Default: ~/.backups
+		    -H      Specify RCM hostname explicitly
+		            Default: \$HOSTNAME
+		    -d      Dry-run: don't actually move or backup anything
+		    -h      Display this help message and exit
+		
+		USAGE
+}
 
 _start_logentry() {
     touch "$LOGFILE" || {
@@ -28,7 +44,7 @@ _log() {
 } >>"$LOGFILE"
 
 _safe_move() {
-    local src="$(realpath "$src")" dest="$2"
+    local src="$(realpath "$1")" dest="$2"
     _log "'${src}' --> '${dest}'"
     if [ $DRY_RUN -eq 0 ]; then
         if [ -e "$dest" ]; then
@@ -38,6 +54,7 @@ _safe_move() {
                 _log "" "Failed to backup '$dest'"
             }
         fi
+        mkdir -p "$(dirname "$dest")"
         cp -r "$src" "$dest" && {
             _log "" "Copied '$src' to '$dest'"
         } || {
@@ -52,13 +69,19 @@ main() {
     local src=
     local dest=
     if ! command -v lsrc >/dev/null 2>&1; then
-        echo "Command 'lsrc' not found!" >&2
+        echo "Command 'lsrc' not found.  Is RCM installed?" >&2
         exit 23
     fi
-    while getopts ":l:b:dh" opt; do
+    while getopts ":l:b:H:dh" opt; do
         case "$opt" in
             l)
                 LOGFILE="$OPTARG"
+                ;;
+            b)
+                BACKUPS="$OPTARG"
+                ;;
+            H)
+                HOST="$OPTARG"
                 ;;
             d)
                 let DRY_RUN=1
